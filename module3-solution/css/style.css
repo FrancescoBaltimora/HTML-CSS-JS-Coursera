@@ -1,0 +1,132 @@
+.Flex{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    background-color: gray;
+}
+
+.Hidden{
+    display: none;
+}
+
+.Block{
+    display: block;
+}
+
+.space-around{
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+img{
+    width: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+.burger-menu{
+    display: none;
+}
+
+.greyBg{
+    position: relative;
+    background-color: gray;
+    border: black 2px solid;
+}
+
+.pinkBg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 5rem;
+    background-color: pink;
+    border-bottom: black 2px solid;
+    border-left: black 2px solid;
+}
+
+.redBg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 5rem;
+    background-color:brown;
+    border-left: black 2px solid;
+    border-bottom: black 2px solid;
+}
+
+.yellowBg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 5rem;
+    background-color: darkkhaki;
+    border-bottom: black 2px solid;
+    border-left: black 2px solid;
+}
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    gap: 2rem;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .flex{
+        display: block;
+        position: relative;
+    }
+
+    .chicken{
+        width: 24rem;
+        margin-bottom: 30px;
+    }
+
+    .beef{
+        width: 24rem;
+        position: absolute;
+        top: 0;
+        right: 0px;
+    }
+}
+
+@media only screen and  (max-width: 767px){
+
+    .greyBg{
+        margin: 0 50px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+}
