@@ -1,0 +1,119 @@
+/* A little library */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+*{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.greyBg{
+    background-color: gray;
+    width: 30%;
+}
+
+.text{
+    margin-bottom: 20px;
+}
+
+/* Style for desktops */
+nav{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    height: 3rem;
+    border: 3px solid black
+}
+
+nav>h1{
+    margin: 0px 50px;
+    text-align: start;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.Hidden{
+    display: none;
+}
+
+.Block{
+    display: none;
+}
+
+/* Style for Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .beef,
+    .chicken{
+        width: 43%;
+    }
+
+    .Hidden{
+        display: none;
+    }
+
+    .Block{
+        display: none;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .sushi{
+        width: 90%;
+    }
+}
+
+/* Style for mobile */
+@media only screen and  (max-width: 767px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 5rem;
+    }
+
+    img{
+        width: 3rem;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .burger-menu{
+        display: block;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .Hidden{
+        display: none;
+    }
+    
+    .Block{
+        display: block;
+    }
+
+    .greyBg{
+        width: 90%;
+    }
+}
